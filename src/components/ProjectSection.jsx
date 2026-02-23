@@ -35,9 +35,22 @@ const ProjectCard = ({ title, description, techStack, icon, bg, live, code }) =>
         ))}
       </div>
       <div className="flex justify-between">
-        <a href={live} className="text-blue-400 hover:text-blue-300 transition-colors">
-          <i className="fas fa-external-link-alt mr-1" /> Live Demo
-        </a>
+        {live === "Coming Soon" ? (
+  <span className="text-gray-400 cursor-not-allowed flex items-center">
+    <i className="fas fa-clock mr-1" />
+    Coming Soon
+  </span>
+) : (
+  <a
+    href={live}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:text-blue-300 transition-colors flex items-center"
+  >
+    <i className="fas fa-external-link-alt mr-1" />
+    Live Demo
+  </a>
+)}
         <a href={code} className="text-blue-400 hover:text-blue-300 transition-colors">
           <i className="fab fa-github mr-1" /> Source Code
         </a>
@@ -117,7 +130,34 @@ const ProjectSection = () => {
   code="https://github.com/JashanGill04/Health-Mate"
 />
 
+<ProjectCard
+  title="CollabSpace"
+  description="A session-based local collaboration system enabling users to dynamically join and leave sessions with real-time chat, audio communication, and a shared whiteboard for seamless team collaboration."
+  techStack={["Node.js", "JavaScript", "Socket.io", "SQL"]}
+  bg="bg-gradient-to-br from-blue-500 to-indigo-600"
+  icon={
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-20 w-20 text-white"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m4-4a4 4 0 100-8 4 4 0 000 8zm6 4a3 3 0 100-6 3 3 0 000 6z"
+      />
+    </svg>
+  }
+  live="Coming Soon"
+  code="https://github.com/JashanGill04/CollabSpace"
+/>
+
         </motion.div>
+
+
 
         <motion.div
           className="text-center mt-12"

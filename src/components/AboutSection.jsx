@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import image from "../assets/image.jpg";
+import Resume from "../assets/Resume.pdf";
 const AboutSection = () => {
   const name = "Jashanpreet Singh";
   const email = "jpsgill20@gmail.com";
@@ -80,7 +81,7 @@ I aim to build products that are robust under the hood, with well-structured API
 
             {/* Download CV Button */}
             <a
-              href="/JashanSingh_Resume.pdf"
+              href={Resume}
               download
               className="inline-block bg-gradient-to-r from-blue-400 to-indigo-500 hover:from-blue-500 hover:to-indigo-600 text-white px-6 py-3 rounded-full font-medium transition duration-300 transform hover:scale-105"
             >

@@ -98,7 +98,7 @@ const Contact = () => {
                 >
                   <FaLinkedin />
                 </a>
-                <a
+                {/* <a
                   href="https://twitter.com/yourusername"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -106,7 +106,7 @@ const Contact = () => {
                   aria-label="Twitter"
                 >
                   <FaTwitter />
-                </a>
+                </a> */}
                 <a
                   href="https://instagram.com/jashangill_6"
                   target="_blank"

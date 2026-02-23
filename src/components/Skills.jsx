@@ -53,16 +53,27 @@ const SkillItem = ({ icon, bgColor, textColor, name, delay }) => (
 
 // Skills Data
 const skillsData = [
-  { icon: "fab fa-html5", bgColor: "bg-blue-500/20", textColor: "text-blue-400", name: "HTML5" },
-  { icon: "fab fa-css3-alt", bgColor: "bg-blue-500/20", textColor: "text-blue-400", name: "CSS3" },
+  // Languages
   { icon: "fab fa-js", bgColor: "bg-yellow-500/20", textColor: "text-yellow-400", name: "JavaScript" },
-  { icon: "fab fa-react", bgColor: "bg-blue-500/20", textColor: "text-blue-400", name: "React" },
-  { icon: "fab fa-node-js", bgColor: "bg-green-500/20", textColor: "text-green-400", name: "Node.js" },
-{ icon: "fas fa-server", bgColor: "bg-purple-500/20", textColor: "text-purple-400", name: "Express.js" },
-{ icon: "fas fa-leaf", bgColor: "bg-green-500/20", textColor: "text-green-400", name: "MongoDB" },
-{ icon: "fas fa-code", bgColor: "bg-indigo-500/20", textColor: "text-indigo-400", name: "Next.js" },
-{ icon: "fas fa-code", bgColor: "bg-indigo-500/20", textColor: "text-indigo-400", name: "MySQL" },
+  { icon: "fab fa-java", bgColor: "bg-red-500/20", textColor: "text-red-400", name: "Java" },
+  { icon: "fas fa-code", bgColor: "bg-blue-500/20", textColor: "text-blue-400", name: "C++" },
 
+  // Frontend (minimal)
+  { icon: "fab fa-react", bgColor: "bg-cyan-500/20", textColor: "text-cyan-400", name: "React" },
+  { icon: "fas fa-code", bgColor: "bg-indigo-500/20", textColor: "text-indigo-400", name: "Next.js" },
+
+  // Backend
+  { icon: "fab fa-node-js", bgColor: "bg-green-500/20", textColor: "text-green-400", name: "Node.js" },
+  { icon: "fas fa-server", bgColor: "bg-purple-500/20", textColor: "text-purple-400", name: "Express.js" },
+  { icon: "fas fa-network-wired", bgColor: "bg-pink-500/20", textColor: "text-pink-400", name: "Socket.io" },
+
+  // Databases
+  { icon: "fas fa-leaf", bgColor: "bg-green-500/20", textColor: "text-green-400", name: "MongoDB" },
+  { icon: "fas fa-database", bgColor: "bg-indigo-500/20", textColor: "text-indigo-400", name: "MySQL" },
+
+  // Tools / Architecture
+  { icon: "fas fa-code-branch", bgColor: "bg-orange-500/20", textColor: "text-orange-400", name: "Git & GitHub" },
+  { icon: "fas fa-cubes", bgColor: "bg-teal-500/20", textColor: "text-teal-400", name: "REST APIs" },
 ];
 
 export default Skills;
