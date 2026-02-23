@@ -131,7 +131,7 @@ const ProjectSection = () => {
 />
 
 <ProjectCard
-  title="CollabSpace"
+  title="EchoHub"
   description="A session-based local collaboration system enabling users to dynamically join and leave sessions with real-time chat, audio communication, and a shared whiteboard for seamless team collaboration."
   techStack={["Node.js", "JavaScript", "Socket.io", "SQL"]}
   bg="bg-gradient-to-br from-blue-500 to-indigo-600"
@@ -152,7 +152,7 @@ const ProjectSection = () => {
     </svg>
   }
   live="Coming Soon"
-  code="https://github.com/JashanGill04/CollabSpace"
+  code="https://github.com/JashanGill04/EchoHub-Project.git"
 />
 
         </motion.div>
